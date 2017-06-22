@@ -18,7 +18,7 @@ public class Application {
 
 	@Bean
 	public CommandLineRunner demo(CustomerRepository repository) {
-		return (args) -> {
+		return (abc) -> {
 			// save a couple of customers
 			repository.save(new Customer("Jack", "Bauer"));
 			repository.save(new Customer("Chloe", "O'Brian"));
