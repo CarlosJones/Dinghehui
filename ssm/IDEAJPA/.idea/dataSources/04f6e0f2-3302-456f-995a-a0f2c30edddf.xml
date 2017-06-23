@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="school/Hibernate">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="school">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="email"/>
+    <schema id="4" parent="1" name="example"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="jpadb"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="sakila"/>
+    <schema id="10" parent="1" name="sys"/>
+    <schema id="11" parent="1" name="world"/>
+    <table id="12" parent="2" name="idcard"/>
+    <table id="13" parent="2" name="person"/>
+    <table id="14" parent="2" name="student"/>
+    <column id="15" parent="12" name="c_id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="12" name="ID">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="17" parent="12" name="person_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="18" parent="12" name="FK1xq599ojd0ta8wx6yjfmiherr">
+      <ColNames>person_id</ColNames>
+    </index>
+    <key id="19" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>c_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="20" parent="12" name="FK1xq599ojd0ta8wx6yjfmiherr">
+      <ColNames>person_id</ColNames>
+      <RefSchemaName>school</RefSchemaName>
+      <RefTableName>person</RefTableName>
+      <RefColNames>p_id</RefColNames>
+    </foreign-key>
+    <column id="21" parent="13" name="p_id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="13" name="card_id">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="23" parent="13" name="FK5jy9qildth5v4h078dw4os948">
+      <ColNames>card_id</ColNames>
+    </index>
+    <key id="24" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>p_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="25" parent="13" name="FK5jy9qildth5v4h078dw4os948">
+      <ColNames>card_id</ColNames>
+      <RefSchemaName>school</RefSchemaName>
+      <RefTableName>idcard</RefTableName>
+      <RefColNames>c_id</RefColNames>
+    </foreign-key>
+    <column id="26" parent="14" name="s_ID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="14" name="s_Name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="28" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>s_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
