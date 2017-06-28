@@ -23,9 +23,13 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" value="a106052b-6892-4233-9741-cd8bea793718" />
+          <factory-entry name="company" />
           <factory-entry name="customer" value="a106052b-6892-4233-9741-cd8bea793718" />
+          <factory-entry name="dept" />
           <factory-entry name="entityManagerFactory" />
           <factory-entry name="magazine" value="ae9f4ba7-3596-4792-9ad5-d1dc629ae8a0" />
+          <factory-entry name="role" />
+          <factory-entry name="school" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>

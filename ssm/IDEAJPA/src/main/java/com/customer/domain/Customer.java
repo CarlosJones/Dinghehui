@@ -40,7 +40,7 @@ public class Customer {
         this.name = name;
     }
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name="c_id")
     public Set<Order> getOrders() {
         return orders;

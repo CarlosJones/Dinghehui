@@ -21,198 +21,290 @@
     <table id="15" parent="2" name="hibernate_sequence"/>
     <table id="16" parent="2" name="hibernate_sequences"/>
     <table id="17" parent="2" name="idcard"/>
-    <table id="18" parent="2" name="person"/>
-    <table id="19" parent="2" name="student"/>
-    <table id="20" parent="2" name="t_company"/>
-    <table id="21" parent="2" name="t_employee"/>
-    <column id="22" parent="12" name="customer_id">
+    <table id="18" parent="2" name="oneorder"/>
+    <table id="19" parent="2" name="person"/>
+    <table id="20" parent="2" name="roles"/>
+    <table id="21" parent="2" name="student"/>
+    <table id="22" parent="2" name="t_company"/>
+    <table id="23" parent="2" name="t_employee"/>
+    <table id="24" parent="2" name="user_role"/>
+    <table id="25" parent="2" name="users"/>
+    <column id="26" parent="12" name="customer_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="23" parent="12" name="customer_name">
+    <column id="27" parent="12" name="customer_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="24" parent="12" name="PRIMARY">
+    <key id="28" parent="12" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>customer_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="25" parent="13" name="ID">
+    <column id="29" parent="13" name="ID">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="26" parent="13" name="NAME">
+    <column id="30" parent="13" name="NAME">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="27" parent="13" name="PRIMARY">
+    <key id="31" parent="13" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="28" parent="14" name="ID">
+    <column id="32" parent="14" name="ID">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="29" parent="14" name="JOB">
+    <column id="33" parent="14" name="JOB">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="30" parent="14" name="NAME">
+    <column id="34" parent="14" name="NAME">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="31" parent="14" name="SEX">
+    <column id="35" parent="14" name="SEX">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="32" parent="14" name="DEPT_ID">
+    <column id="36" parent="14" name="DEPT_ID">
       <Position>5</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <index id="33" parent="14" name="FKmh96iaaqxob23enxf1rh5xcia">
+    <index id="37" parent="14" name="FKmh96iaaqxob23enxf1rh5xcia">
       <ColNames>DEPT_ID</ColNames>
     </index>
-    <key id="34" parent="14" name="PRIMARY">
+    <key id="38" parent="14" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="35" parent="14" name="FKmh96iaaqxob23enxf1rh5xcia">
+    <foreign-key id="39" parent="14" name="FKmh96iaaqxob23enxf1rh5xcia">
       <ColNames>DEPT_ID</ColNames>
       <RefSchemaName>school</RefSchemaName>
       <RefTableName>dept</RefTableName>
       <RefColNames>ID</RefColNames>
     </foreign-key>
-    <column id="36" parent="15" name="next_val">
+    <column id="40" parent="15" name="next_val">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <column id="37" parent="16" name="sequence_name">
+    <column id="41" parent="16" name="sequence_name">
       <Position>1</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="38" parent="16" name="next_val">
+    <column id="42" parent="16" name="next_val">
       <Position>2</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <key id="39" parent="16" name="PRIMARY">
+    <key id="43" parent="16" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>sequence_name</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="40" parent="17" name="c_id">
+    <column id="44" parent="17" name="c_id">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="17" name="ID">
+    <column id="45" parent="17" name="ID">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="42" parent="17" name="person_id">
+    <column id="46" parent="17" name="person_id">
       <Position>3</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <index id="43" parent="17" name="FK1xq599ojd0ta8wx6yjfmiherr">
+    <index id="47" parent="17" name="FK1xq599ojd0ta8wx6yjfmiherr">
       <ColNames>person_id</ColNames>
     </index>
-    <key id="44" parent="17" name="PRIMARY">
+    <key id="48" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>c_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="45" parent="17" name="FK1xq599ojd0ta8wx6yjfmiherr">
+    <foreign-key id="49" parent="17" name="FK1xq599ojd0ta8wx6yjfmiherr">
       <ColNames>person_id</ColNames>
       <RefSchemaName>school</RefSchemaName>
       <RefTableName>person</RefTableName>
       <RefColNames>p_id</RefColNames>
     </foreign-key>
-    <column id="46" parent="18" name="p_id">
+    <column id="50" parent="18" name="order_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="51" parent="18" name="order_bianhao">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="52" parent="18" name="c_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="53" parent="18" name="FKhiycccpvrlbp4x558flsifuw2">
+      <ColNames>c_id</ColNames>
+    </index>
+    <key id="54" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>order_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="55" parent="18" name="FKhiycccpvrlbp4x558flsifuw2">
+      <ColNames>c_id</ColNames>
+      <RefSchemaName>school</RefSchemaName>
+      <RefTableName>customer</RefTableName>
+      <RefColNames>customer_id</RefColNames>
+    </foreign-key>
+    <column id="56" parent="19" name="p_id">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="18" name="card_id">
+    <column id="57" parent="19" name="card_id">
       <Position>2</Position>
       <DataType>bigint(20)|0</DataType>
     </column>
-    <index id="48" parent="18" name="FK5jy9qildth5v4h078dw4os948">
+    <index id="58" parent="19" name="FK5jy9qildth5v4h078dw4os948">
       <ColNames>card_id</ColNames>
     </index>
-    <key id="49" parent="18" name="PRIMARY">
+    <key id="59" parent="19" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>p_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="50" parent="18" name="FK5jy9qildth5v4h078dw4os948">
+    <foreign-key id="60" parent="19" name="FK5jy9qildth5v4h078dw4os948">
       <ColNames>card_id</ColNames>
       <RefSchemaName>school</RefSchemaName>
       <RefTableName>idcard</RefTableName>
       <RefColNames>c_id</RefColNames>
     </foreign-key>
-    <column id="51" parent="19" name="s_ID">
+    <column id="61" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="20" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="63" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="64" parent="21" name="s_ID">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="19" name="s_Name">
+    <column id="65" parent="21" name="s_Name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="53" parent="19" name="PRIMARY">
+    <key id="66" parent="21" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>s_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="54" parent="20" name="company_id">
+    <column id="67" parent="22" name="company_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="55" parent="20" name="company_name">
+    <column id="68" parent="22" name="company_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="56" parent="20" name="PRIMARY">
+    <key id="69" parent="22" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>company_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="57" parent="21" name="employee_id">
+    <column id="70" parent="23" name="employee_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="58" parent="21" name="employee_name">
+    <column id="71" parent="23" name="employee_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="59" parent="21" name="cid">
+    <column id="72" parent="23" name="cid">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="60" parent="21" name="FK4ej9dub1c6d4dwujctihwg2hi">
+    <index id="73" parent="23" name="FK4ej9dub1c6d4dwujctihwg2hi">
       <ColNames>cid</ColNames>
     </index>
-    <key id="61" parent="21" name="PRIMARY">
+    <key id="74" parent="23" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>employee_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="62" parent="21" name="FK4ej9dub1c6d4dwujctihwg2hi">
+    <foreign-key id="75" parent="23" name="FK4ej9dub1c6d4dwujctihwg2hi">
       <ColNames>cid</ColNames>
       <RefSchemaName>school</RefSchemaName>
       <RefTableName>t_company</RefTableName>
       <RefColNames>company_id</RefColNames>
     </foreign-key>
+    <column id="76" parent="24" name="users_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="24" name="roles_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="78" parent="24" name="FK66ou45fyydgltrhvuc81rp15q">
+      <ColNames>roles_id</ColNames>
+    </index>
+    <key id="79" parent="24" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>users_id
+roles_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="80" parent="24" name="FKm3tmf7s11ilny7lvpiks60j0n">
+      <ColNames>users_id</ColNames>
+      <RefSchemaName>school</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="81" parent="24" name="FK66ou45fyydgltrhvuc81rp15q">
+      <ColNames>roles_id</ColNames>
+      <RefSchemaName>school</RefSchemaName>
+      <RefTableName>roles</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="82" parent="25" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="83" parent="25" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="84" parent="25" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>
